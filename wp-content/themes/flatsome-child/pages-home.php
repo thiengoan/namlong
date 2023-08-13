@@ -9,12 +9,13 @@ get_header(); ?>
 <div id="content" role="main" class="content-area">
     <?php 
         get_template_part( 'layouts/slider');
+        get_template_part( 'layouts/about');
         get_template_part( 'layouts/project');
         get_template_part( 'layouts/activity');
         get_template_part( 'layouts/brand');
     ?>
 </div>
 
-<?php do_action( 'flatsome_after_page' ); ?>
+<?php get_template_part( 'layouts/footer'); ?>
 
-<?php get_footer(); ?>
+<?php get_footer();

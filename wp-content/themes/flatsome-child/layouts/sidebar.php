@@ -1,6 +1,6 @@
 <?php 
 $args = [
-    'post_type'              => 'project',
+    'post_type'              => 'du-an',
     'order' => 'asc'
  ];
  

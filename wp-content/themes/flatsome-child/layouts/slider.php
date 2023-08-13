@@ -13,43 +13,48 @@ $args = [
  
 $news = new \WP_Query( $args );
 ?>
-<div class="row">
-    <div class="col-lg-4 col-12">
-        <h3 class="uppercase">Tin tức nổi bật</h3>
-        <section class="news">
-        <?php
-            if ( $news->have_posts() ) :
-                while ( $news->have_posts() ) :
-                    $news->the_post();
-                    ?>
-                    <div class="item">
-                        <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>"> 
-                            <?php the_title('<h3 class="title-news">','</h3>'); ?>
-                        </a>
-                        <?php the_excerpt(); ?>
-                    </div>
+<section class="slider-main pb-0">
+    <div class="container">
+        <div class="row content">
+            <div class="col-lg-4 col-12">
+                <h3 class="uppercase title-main  ">Tin tức nổi bật</h3>
+                <div class="news">
                 <?php
-                endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
-        </section>
-    </div>
-    <div class="col-lg-8 col-12">
-        <div id="slider">
-            <?php
-            if ( $slider->have_posts() ) :
-                while ( $slider->have_posts() ) :
-                    $slider->the_post();
+                    if ( $news->have_posts() ) :
+                        while ( $news->have_posts() ) :
+                            $news->the_post();
+                            ?>
+                            <div>
+                                <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>"> 
+                                    <?php the_title('<h3 class="title-news">','</h3>'); ?>
+                                    <?php the_excerpt(); ?>
+                                </a>
+                                
+                            </div>
+                        <?php
+                        endwhile;
+                    endif;
+                    wp_reset_postdata();
+                ?>
+                </div>
+            </div>
+            <div class="col-lg-8 col-12">
+                <div id="slider">
+                    <?php
+                    if ( $slider->have_posts() ) :
+                        while ( $slider->have_posts() ) :
+                            $slider->the_post();
+                            ?>
+                            <div>
+                                <img width="100%" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            </div>
+                        <?php
+                        endwhile;
+                    endif;
+                    wp_reset_postdata();
                     ?>
-                    <div>
-                        <img width="100%" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-                    </div>
-                <?php
-                endwhile;
-            endif;
-            wp_reset_postdata();
-            ?>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>

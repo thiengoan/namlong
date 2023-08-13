@@ -6,8 +6,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
 	<?php wp_head(); ?>
+    <style>
+        .nav>li{
+            margin: 0 15px;
+        }
+        .nav>li>a{
+            font-size: 1rem;
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,8 +37,8 @@ $slug = $post->post_name;
                 </div>
                 
                 <!-- Menu Mobile Elements -->
-                <div class="flex-col show-for-medium flex-left">
-                    <ul class="mobile-nav nav nav-left ">
+                <div class="flex-col show-for-medium flex-right">
+                    <ul class="mobile-nav nav nav-right">
                         <li class="nav-icon has-icon">
                         <a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
                         <i class="icon-menu"></i>

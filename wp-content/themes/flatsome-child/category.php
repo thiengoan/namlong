@@ -2,10 +2,12 @@
 get_header(); 
 
 $term = get_queried_object();
+
 $args = array(
     'posts_per_page' => 50,
-    'post_type' => $term->slug  
- );
+    'post_type' => $term->slug 
+);
+
 $wp_query = new WP_Query( $args );
 
 ?>
@@ -19,7 +21,8 @@ $wp_query = new WP_Query( $args );
     <div class="container">
         <div class="row">
             <div id="content" class="large-8 left col col-divided" role="main">
-                <section class="activity">
+                <h3 class="uppercase title-main"><?php echo $term->name; ?></h3>
+                <section class="activity" style="background-color: unset">
                     <div class="container">
                         <div class="row">
                             <?php
@@ -29,10 +32,16 @@ $wp_query = new WP_Query( $args );
                                         ?>
                                         <div class="col-6">
                                             <div class="item">
-                                                <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>">
-                                                    <?php echo get_the_post_thumbnail($wp_query->ID(), 'medium'); ?>
-                                                    <?php the_title('<h3 class="title-activity">','</h3>'); ?>
-                                                </a>
+                                                <div class="box-image">
+                                                    <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>">
+                                                        <?php echo get_the_post_thumbnail($wp_query->ID(), 'medium'); ?>
+                                                    </a>
+                                                </div>
+                                                <div class="box-text">
+                                                    <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>">
+                                                        <?php the_title('<h3>','</h3>'); ?>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     <?php

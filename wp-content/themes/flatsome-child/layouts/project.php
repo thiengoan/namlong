@@ -1,23 +1,23 @@
 <?php
 
 $args = [
-    'post_type'              => 'project',
+    'post_type'              => 'du-an',
     'order' => 'asc'
  ];
  
 $query = new \WP_Query( $args );
 ?>
 
-<section class="projects mb-5">
+<section class="projects">
     <div class="container">
-        <h3 class="uppercase">Dự án nổi bật</h3>
+        <h3 class="uppercase title-main">Dự án nổi bật</h3>
         <div id="project">
         <?php
             if ( $query->have_posts() ) :
                 while ( $query->have_posts() ) :
                     $query->the_post();
                     ?>
-                    <div class="item has-hover">
+                    <div class="item">
                         <div class="box-image">
                             <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>">
                                 <div class="image-zoom-fade">

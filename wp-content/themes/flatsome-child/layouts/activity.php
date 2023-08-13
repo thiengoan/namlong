@@ -10,7 +10,7 @@ $query = new \WP_Query( $args );
 
 <section class="activity">
     <div class="container">
-        <h3 class="uppercase">Lĩnh vực hoạt động</h3>
+        <h3 class="uppercase title-main">Lĩnh vực hoạt động</h3>
         <div class="row">
         <?php
             if ( $query->have_posts() ) :

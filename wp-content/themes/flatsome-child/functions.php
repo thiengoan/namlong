@@ -4,9 +4,7 @@ define('ASSET_PATH', get_template_directory_uri()  . '-child/assets' );
 
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
-// add_action( 'flatsome_before_page', 'add_slider' );
 add_action( 'init', 'add_custom_fileds_slider');
-add_action( 'init', 'add_custom_fileds_brand');
 add_action( 'init', 'add_custom_fileds_project');
 add_action( 'init', 'add_custom_fileds_news');
 add_action( 'init', 'add_custom_fileds_activity');
@@ -45,31 +43,20 @@ function add_custom_fileds_slider() {
       'public' => true,
       'label'  => 'Slider',
       'supports' => ['title', 'thumbnail', 'editor'],
-      'menu_position' => 6
+      'menu_position' => 5
   ];
   register_post_type( 'slider', $args );
 }
 
 function add_custom_fileds_project() {
-  $labels = array('post_excerpt' => 'Địa chỉ');
   $args = [
-      'labels'            => $labels,
       'public' => true,
       'label'  => 'Dự án',
       'supports' => ['title','thumbnail','excerpt','editor'],
-      'menu_position' => 7
+      'menu_position' => 6,
+      'taxonomies'          => array( 'category' ),
   ];
-  register_post_type( 'project', $args );
-}
-
-function add_custom_fileds_brand() {
-  $args = [
-      'public' => true,
-      'label'  => 'Đối tác',
-      'supports' => ['title', 'thumbnail','excerpt'],
-      'menu_position' => 8
-  ];
-  register_post_type( 'doi-tac', $args );
+  register_post_type( 'du-an', $args );
 }
 
 function add_custom_fileds_news() {
@@ -77,7 +64,7 @@ function add_custom_fileds_news() {
       'public' => true,
       'label'  => 'Tin tức',
       'supports' => ['title', 'thumbnail','excerpt', 'editor'],
-      'menu_position' => 9,
+      'menu_position' => 7,
       'taxonomies'          => array( 'category' ),
   ];
   register_post_type( 'tin-tuc', $args );
@@ -88,7 +75,7 @@ function add_custom_fileds_activity() {
       'public' => true,
       'label'  => 'Hoạt động',
       'supports' => ['title', 'thumbnail','excerpt', 'editor'],
-      'menu_position' => 10,
+      'menu_position' => 8,
       'taxonomies'          => array( 'category' ),
   ];
   register_post_type( 'linh-vuc-hoat-dong', $args );
@@ -101,14 +88,14 @@ add_action('save_post','save_field');
 
 function create_field()
 {
-  add_meta_box('about_meta_box_id','Giới thiệu','show_about_field','project','normal','high');
-  add_meta_box('local_meta_box_id','Vị trí','show_local_field','project','normal','high');
-  add_meta_box('utility_meta_box_id','Tiện ích','show_utility_field','project','normal','high');
-  add_meta_box('ground_meta_box_id','Mặt bằng','show_ground_field','project','normal','high');
-  add_meta_box('design_meta_box_id','Thiết kế','show_design_field','project','normal','high');
-  add_meta_box('progress_meta_box_id','Tiến độ','show_progress_field','project','normal','high');
-  add_meta_box('pay_meta_box_id','Thanh toán','show_pay_field','project','normal','high');
-  //add_meta_box('logo_meta_box_id','Logo','show_logo_field','project','normal','high');
+  add_meta_box('about_meta_box_id','Giới thiệu','show_about_field','du-an','normal','high');
+  add_meta_box('local_meta_box_id','Vị trí','show_local_field','du-an','normal','high');
+  add_meta_box('utility_meta_box_id','Tiện ích','show_utility_field','du-an','normal','high');
+  add_meta_box('ground_meta_box_id','Mặt bằng','show_ground_field','du-an','normal','high');
+  add_meta_box('design_meta_box_id','Thiết kế','show_design_field','du-an','normal','high');
+  add_meta_box('progress_meta_box_id','Tiến độ','show_progress_field','du-an','normal','high');
+  add_meta_box('pay_meta_box_id','Thanh toán','show_pay_field','du-an','normal','high');
+  //add_meta_box('logo_meta_box_id','Logo','show_logo_field','du-an','normal','high');
 }
 
 // function show_logo_field($post) {
@@ -248,31 +235,31 @@ function my_general_section() {
     ); 
     
     add_settings_field( // Option 1
-        'holine_1', // Option ID
+        'hotline_1', // Option ID
         'Hotline', // Label
         'my_hotline_callback', // !important - This is where the args go!
         'general', // Page it will be displayed (General Settings)
         'my_settings_section', // Name of our section
         array( // The $args
-            'holine_1' // Should match Option ID
+            'hotline_1' // Should match Option ID
         )  
     ); 
     
     add_settings_field( // Option 2
-        'holine_2', // Option ID
+        'hotline_2', // Option ID
         'Zalo', // Label
         'my_hotline_callback', // !important - This is where the args go!
         'general', // Page it will be displayed
         'my_settings_section', // Name of our section (General Settings)
         array( // The $args
-            'holine_2' // Should match Option ID
+            'hotline_1' // Should match Option ID
         )  
     ); 
 
     register_setting('general','company_name', 'esc_attr');
     register_setting('general','company_add', 'esc_attr');
-    register_setting('general','holine_1', 'esc_attr');
-    register_setting('general','holine_2', 'esc_attr');
+    register_setting('general','hotline_1', 'esc_attr');
+    register_setting('general','hotline_2', 'esc_attr');
 }
 
 function my_section_options_callback() { // Section Callback
@@ -287,4 +274,9 @@ function my_textbox_callback($args) {  // Textbox Callback
 function my_hotline_callback($args) {  // Textbox Callback
   $option = get_option($args[0]);
   echo '<input type="text" id="'. $args[0] .'" name="'. $args[0] .'" value="' . $option . '" />';
+}
+
+add_shortcode( 'wp_site_name', 'wp_site_name' );
+function wp_site_name( $atts ) {
+	return get_option('company_name');
 }

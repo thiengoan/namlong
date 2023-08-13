@@ -1,1 +1,0 @@
-<input type="text" class="gs-color" name="<?php echo $id ?>" id="<?php echo $id ?>" value="<?php echo $value ?>" />

@@ -18,6 +18,7 @@ $wp_query = new WP_Query( $args );
     <div class="container">
         <div class="row">
             <div id="content" class="large-8 left col col-divided" role="main">
+                <h3 class="uppercase title-main"><?php echo $term->name; ?></h3>
                 <section class="news">
                     <div class="container">
                         <div class="row">
@@ -26,14 +27,21 @@ $wp_query = new WP_Query( $args );
                                     while ( $wp_query->have_posts() ) :
                                         $wp_query->the_post();
                                         ?>
-                                        <div class="col-3">
-                                            <div class="item">
-                                                <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>">
-                                                    <?php echo get_the_post_thumbnail($wp_query->ID(), 'medium'); ?>
-                                                    <?php the_title('<h4 class="title-news">','</h4>'); ?>
-                                                    <?php the_excerpt() ?>
-                                                </a>
+                                        <div class="col-12">
+                                            <div class="d-flex mb-3">
+                                                <div class="box-image mr-2">
+                                                    <a href="<?php echo get_permalink(); ?>" alt="<?php the_title(); ?>">
+                                                        <?php echo get_the_post_thumbnail($wp_query->ID(), 'thumbnail'); ?>
+                                                    </a>
+                                                </div>
+                                                <div class="box-text">
+                                                    <a href="<?php echo get_permalink(); ?>" alt="<?php the_title(); ?>">
+                                                        <?php the_title('<h4>','</h4>'); ?>
+                                                    </a>
+                                                    <?php the_excerpt(); ?>
+                                                </div>
                                             </div>
+                                            <hr>
                                         </div>
                                     <?php
                                     endwhile;

@@ -23,6 +23,35 @@ a:hover{
     text-decoration: none;
 }
 
+table tr td:first-child{
+    width: 20% !important;
+}
+
+table tr td{
+    font-size: 15px;
+    color: #222222;
+}
+
+section{
+    padding: 30px 0;
+}
+
+section ul{
+    margin-left: 20px;
+}
+
+.back-to-top.button.icon{
+    background-color: #b52828;
+    color: #fff;
+}
+.back-to-top.button.icon:hover{
+    border-color: #fff;
+}
+
+.slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow{
+    background-color: #b52828;
+    border-color: #b52828;
+} 
 .title-news{
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
@@ -71,6 +100,28 @@ a:hover{
     border-bottom: 0 solid transparent;
     border-right: 14px solid rgba(0,0,0,.06);
 }
+h3.title-main{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+h3.title-main:before {
+    border-right-color: #e64e05!important;
+    border-top: 13px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 14px solid rgba(0,0,0,.06);
+}
+h3.title-main:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 0 solid transparent;
+    top: 50%;
+    margin-top: -7px;
+}
 .title-sidebar span:before {
     content: '';
     position: absolute;
@@ -100,6 +151,28 @@ a:hover{
     transition: .35s cubic-bezier(.39,.58,.57,1) 0s;
     z-index: 1;
 }
+.btn-readmore{
+    background-color: #b52828;
+    color: #fff;
+    padding: 5px 15px;
+}
+.btn-readmore:hover{
+    color: #fff;
+}
+
+.slider-main ,.activity{
+    background: #e6e8e7;
+
+}
+
+.aboutus .box-image{
+    border: 1px solid #b52828;
+    padding: 3px;
+}
+.aboutus p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 .activity .item{
     padding: 5px;
     background: #fff;
@@ -117,6 +190,9 @@ a:hover{
     padding: 10px;
     text-align: center;
 }
+.projects .box-text{
+    background-color: #e6e8e7;
+}
 .news p{
     font-size: 14px;
     line-height: 1.8;
@@ -131,8 +207,8 @@ a:hover{
 .title-project{
     position: relative;
     display: inline-block;
-    font-size: 25px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .title-project span{
@@ -225,4 +301,100 @@ a:hover{
 }
 .sb_breadcrumb li{
     margin-bottom: 0;
+}
+
+.slider-nav-light .flickity-page-dots .dot.is-selected{
+    background-color: #b52828;
+}
+.slider-nav-light .flickity-page-dots .dot{
+    background-color: #b52828;
+}
+.footer{
+    background-color: #b52828;
+    padding: 30px 0;
+}
+.footer h4{
+    color: #ffbf00;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer p,
+.footer .link-project h5{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.form-mail{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-mail input{
+    border-radius: 10px;
+}
+
+.form-mail p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer .logo img{
+    width: 200px;
+}
+
+.box-mail{
+    background: #ffffff;
+    max-width: 665px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border: 4px dashed #b52828;
+    border-radius: 5px;
+}
+
+.thanhtoan img{
+    width: 90%;
+}
+
+@media (max-width: 575.98px) { 
+    
+    #logo-footer img{
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .footer h4{
+        font-size: 85%;
+    }
+    .footer p,
+    .footer .link-project h5{
+        font-size: 90%;
+    }
+    .copyright-footer{
+        font-size: 11px;
+    }
+    .title-project{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+    .slider-main .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .slider-main .content .news{
+        margin-bottom: 20px;
+    }
+    .aboutus .title-main,
+    .slider-main .content .title-main{
+        margin-top: 20px;
+    }  
+    .row-slider .flickity-prev-next-button{
+        display: none;
+    }
 }
