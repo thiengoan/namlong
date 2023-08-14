@@ -330,6 +330,11 @@ h3.title-main:before {
     margin: 0 auto;
 }
 
+
+.form-mail label{
+    color: #fff;
+}
+
 .form-mail input{
     border-radius: 10px;
 }
@@ -344,11 +349,10 @@ h3.title-main:before {
 }
 
 .box-mail{
-    background: #ffffff;
     max-width: 665px;
     margin: 0 auto;
-    padding-top: 30px;
-    border: 4px dashed #b52828;
+    padding-top: 20px;
+    border: 2px dashed #fff;
     border-radius: 5px;
 }
 

@@ -35,9 +35,9 @@ if($slug == ''){
         <div class="row">
             <div class="col-lg-7 col-md-12 mb-3"> 
                 <h4 class="title uppercase">LIÊN HỆ</h4>
+                <p>Để tìm hiểu thông tin chi tiết, quý khách vui lòng để lại thông tin. Phòng kinh doanh của chúng tôi sẽ liên hệ quý khách trong thời gian sớm nhất.</p>      
                 <div class="box-mail">
                     <div class="form-mail">
-                        <p>Để tìm hiểu thông tin chi tiết, quý khách vui lòng để lại thông tin. Phòng kinh doanh của chúng tôi sẽ liên hệ quý khách trong thời gian sớm nhất.</p>
                         <?php echo do_shortcode('[contact-form-7 id="5c97a31" title="Form liên hệ"]') ?>
                     </div>
                 </div>
