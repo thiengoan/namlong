@@ -86,6 +86,7 @@ if($slug == ''){
 				<div class="container">
 					<h2 class="text-center uppercase mb-3"><div class="title-project"><span>Vị trí <?php the_title() ?></span></div></h2>
 					<?php echo do_shortcode($local); ?>
+					<?php get_template_part( 'layouts/timeline'); ?>
 				</div>
 			</section>
 			<!-- Block Utility -->
