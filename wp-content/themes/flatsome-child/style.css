@@ -361,7 +361,9 @@ h3.title-main:before {
 }
 
 @media (max-width: 575.98px) { 
-    
+    table tr td:first-child{
+        width: 30% !important;
+    }
     #logo-footer img{
         width: 150px;
         margin: 0 auto;
