@@ -5,6 +5,7 @@ $args = array(
     'posts_per_page' => 50,
     'category_name' => 'tin-tuc',
  );
+
 $wp_query = new WP_Query( $args );
 ?>
 <div class="breadcrumb">
@@ -17,7 +18,7 @@ $wp_query = new WP_Query( $args );
     <div class="container">
         <div class="row">
             <div id="content" class="large-8 left col col-divided" role="main">
-                <h3 class="uppercase title-main"><?php echo $term->name; ?></h3>
+                <h3 class="uppercase title-main">Tin Tức</h3>
                 <section class="news">
                     <div class="container">
                         <div class="row">
