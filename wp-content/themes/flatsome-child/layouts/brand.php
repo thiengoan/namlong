@@ -1,4 +1,4 @@
-<section class="projects">
+<section class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -20,4 +20,13 @@
         </div>
     </div>
 </section>
-
+<section class="section slider-company">
+    <div class="container">
+        <h3 class="uppercase title-main">Hình ảnh Nam Long</h3>
+        <div class="row">
+            <?php
+                echo do_shortcode('[block id="hinh-anh-nam-long"]');
+            ?>
+        </div>
+    </div>
+</section>

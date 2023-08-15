@@ -136,6 +136,4 @@ if($slug == ''){
 
 <?php endif; ?>
 
-<?php get_footer('project');
-
-get_footer();
+<?php get_template_part( 'footer-project');

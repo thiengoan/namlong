@@ -10,6 +10,7 @@ add_action( 'init', 'add_custom_fileds_project');
 // add_action( 'init', 'add_custom_fileds_activity');
 add_action( 'init', 'register_menu_project' );
 add_action('admin_enqueue_scripts', 'add_script_admin');
+add_action( 'get_footer', 'add_layout_footer' );
 
 function add_script_admin(){
   wp_enqueue_script( 'handle', get_admin_url() . 'js/script.js' );
@@ -32,11 +33,9 @@ function add_scripts() {
     wp_enqueue_script( 'main-js',  esc_url( ASSET_PATH . '/js/main.js'), true);
 }
 
-// function add_slider(){
-//   if(is_front_page()){
-//       get_template_part( 'layouts/slider');
-//   }
-// }
+function add_layout_footer(){
+  get_template_part( 'layouts/footer');
+}
 
 function add_custom_fileds_slider() {
   $args = [
