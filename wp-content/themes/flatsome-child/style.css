@@ -349,7 +349,10 @@ h3.title-main:before {
 }
 
 .form-mail input{
-    border-radius: 10px;
+    height: 42px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: unset;
 }
 
 .form-mail p{
