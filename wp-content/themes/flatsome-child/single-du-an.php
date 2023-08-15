@@ -45,6 +45,17 @@ if($slug == ''){
 .bg2 .title-project span{
 	color: #f2862a;
 }
+.bg1 .nav>li>a {
+    color: #fff;
+	opacity: .8;
+}
+.bg1 .nav>li>a:hover,
+.bg1 .nav-outline > li.active> a,
+.bg1 .nav-outline >li.active > a{
+	opacity: 1;
+	color: #fff;
+	border-radius: 0;
+}
 .banner p{
 	margin: 0;
 }
