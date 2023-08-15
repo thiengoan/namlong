@@ -367,6 +367,10 @@ h3.title-main:before {
     width: 90%;
 }
 
+.content-project h3{
+    margin: 20px 0;
+}
+
 @media (max-width: 575.98px) { 
     table tr td:first-child{
         width: 30% !important;

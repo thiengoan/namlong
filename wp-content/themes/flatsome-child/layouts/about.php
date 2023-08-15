@@ -2,7 +2,7 @@
 
 $args = [
     'post_slug' => 'gioi-thieu',
-    'post_type' => 'post',
+    'category_name' => 've-chung-toi',
     'order' => 'asc'
 ];
  

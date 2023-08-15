@@ -1,7 +1,7 @@
 <?php
 
 $args = [
-    'post_type'              => 'linh-vuc-hoat-dong',
+    'category_name'              => 'linh-vuc-hoat-dong',
     'order' => 'asc'
  ];
  

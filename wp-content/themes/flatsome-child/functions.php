@@ -6,8 +6,8 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
 add_action( 'init', 'add_custom_fileds_slider');
 add_action( 'init', 'add_custom_fileds_project');
-add_action( 'init', 'add_custom_fileds_news');
-add_action( 'init', 'add_custom_fileds_activity');
+// add_action( 'init', 'add_custom_fileds_news');
+// add_action( 'init', 'add_custom_fileds_activity');
 add_action( 'init', 'register_menu_project' );
 add_action('admin_enqueue_scripts', 'add_script_admin');
 
@@ -59,27 +59,27 @@ function add_custom_fileds_project() {
   register_post_type( 'du-an', $args );
 }
 
-function add_custom_fileds_news() {
-  $args = [
-      'public' => true,
-      'label'  => 'Tin tức',
-      'supports' => ['title', 'thumbnail','excerpt', 'editor'],
-      'menu_position' => 7,
-      'taxonomies'          => array( 'category' ),
-  ];
-  register_post_type( 'tin-tuc', $args );
-}
+// function add_custom_fileds_news() {
+//   $args = [
+//       'public' => true,
+//       'label'  => 'Tin tức',
+//       'supports' => ['title', 'thumbnail','excerpt', 'editor'],
+//       'menu_position' => 7,
+//       'taxonomies'          => array( 'category' ),
+//   ];
+//   register_post_type( 'tin-tuc', $args );
+// }
 
-function add_custom_fileds_activity() {
-  $args = [
-      'public' => true,
-      'label'  => 'Hoạt động',
-      'supports' => ['title', 'thumbnail','excerpt', 'editor'],
-      'menu_position' => 8,
-      'taxonomies'          => array( 'category' ),
-  ];
-  register_post_type( 'linh-vuc-hoat-dong', $args );
-}
+// function add_custom_fileds_activity() {
+//   $args = [
+//       'public' => true,
+//       'label'  => 'Hoạt động',
+//       'supports' => ['title', 'thumbnail','excerpt', 'editor'],
+//       'menu_position' => 8,
+//       'taxonomies'          => array( 'category' ),
+//   ];
+//   register_post_type( 'linh-vuc-hoat-dong', $args );
+// }
 
 // Add custom fields type project
 

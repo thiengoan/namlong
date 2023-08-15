@@ -1,10 +1,9 @@
 <?php
 get_header(); 
 
-$term = get_queried_object();
 $args = array(
     'posts_per_page' => 50,
-    'post_type' => $term->slug  
+    'category_name' => 'tin-tuc',
  );
 $wp_query = new WP_Query( $args );
 ?>

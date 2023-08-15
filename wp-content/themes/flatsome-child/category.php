@@ -3,10 +3,17 @@ get_header();
 
 $term = get_queried_object();
 
-$args = array(
-    'posts_per_page' => 50,
-    'post_type' => $term->slug 
-);
+if($term->slug == 'du-an'){
+    $args = [
+        'post_type'              => 'du-an',
+        'order' => 'asc'
+    ];
+}else{
+    $args = array(
+        'posts_per_page' => 50,
+        'category_name' => $term->slug 
+    );
+}
 
 $wp_query = new WP_Query( $args );
 

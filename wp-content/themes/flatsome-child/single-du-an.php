@@ -71,7 +71,7 @@ if($slug == ''){
 		<div class="banner">
 			<?php the_content(); ?>
 		</div>
-		<div id="content" class="blog-wrapper">
+		<div id="content" class="content-project blog-wrapper">
 			<!-- Block About -->
 			<span class="scroll-to" data-label="Scroll to: #gioi-thieu" data-bullet="false" data-link="#gioi-thieu"><a name="gioi-thieu"></a></span>
 			<section class="section bg2">

@@ -7,7 +7,7 @@ $args = [
 $slider = new \WP_Query( $args );
 
 $args = [
-    'post_type'              => 'tin-tuc',
+    'category_name' => 'tin-tuc',
     'order' => 'asc'
  ];
  
