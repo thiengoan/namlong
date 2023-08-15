@@ -325,11 +325,24 @@ h3.title-main:before {
     margin-bottom: 7px;
 }
 
+.box-mail{
+    max-width: 665px;
+    margin: 0 auto;
+    padding: 20px 10px 10px 10px;
+    border-radius: 5px;
+    background: #ffffffa8;
+    -webkit-box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.frm-mail{
+    background-image: url('assets/images/bg-mail.jpg');
+}
+
 .form-mail{
     max-width: 500px;
     margin: 0 auto;
 }
-
 
 .form-mail label{
     color: #fff;
@@ -346,14 +359,6 @@ h3.title-main:before {
 
 .footer .logo img{
     width: 200px;
-}
-
-.box-mail{
-    max-width: 665px;
-    margin: 0 auto;
-    padding: 20px 10px 0px 10px;
-    border: 2px dashed #fff;
-    border-radius: 5px;
 }
 
 .wpcf7 form .wpcf7-response-output{

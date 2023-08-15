@@ -30,15 +30,30 @@ if($slug == ''){
 }
 </style>
 
+<section class="frm-mail">
+    <div class="container">
+        <div class="box-mail">
+            <div class="form-mail">
+                <h3 class="title uppercase">NHẬN BÁO GIÁ</h3>
+                <p>Quý khách vui lòng điền đầy đủ thông tin bên dưới, chúng tôi sẽ tư vấn và gửi thông tin mới của dự án cho Quý Khách trong thời gian sớm nhất.</p>
+                    <?php
+                        echo do_shortcode('[contact-form-7 id="5c97a31" title="Form liên hệ"]');
+                    ?>
+                <small>*Thông tin của khách hàng sẽ được bảo mật và chỉ sử dụng cho dự án của Akari City.</small>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-12 mb-3"> 
+            <div class="col-lg-6 col-md-12 mb-3 d-flex justify-content-center align-items-center"> 
                 <div id="logo-footer" class="logo">
                     <img src="<?php echo ASSET_PATH . '/logo/'.$slug.'.png'; ?>" alt="logo" loading="lazy">
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12 mb-3"> 
+            <div class="col-lg-6 col-md-12 mb-3"> 
                 <h4 class="title uppercase">THÔNG TIN LIÊN HỆ</h4>
                 <div class="info mt-3">   
                     <p class="uppercase"><strong><?php echo get_option('company_name')?></strong></p>

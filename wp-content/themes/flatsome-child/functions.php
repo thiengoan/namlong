@@ -34,7 +34,11 @@ function add_scripts() {
 }
 
 function add_layout_footer(){
-  get_template_part( 'layouts/footer');
+  if(!is_singular('du-an')){
+    get_template_part( 'layouts/footer');
+  }else{
+    get_template_part( 'footer-project');
+  }
 }
 
 function add_custom_fileds_slider() {
