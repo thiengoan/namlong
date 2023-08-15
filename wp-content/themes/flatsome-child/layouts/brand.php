@@ -20,7 +20,7 @@
         </div>
     </div>
 </section>
-<section class="section slider-company">
+<section class="slider-company">
     <div class="container">
         <h3 class="uppercase title-main">Hình ảnh Nam Long</h3>
         <div class="row">
