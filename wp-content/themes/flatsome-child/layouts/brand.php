@@ -23,10 +23,8 @@
 <section class="slider-company">
     <div class="container">
         <h3 class="uppercase title-main">Hình ảnh Nam Long</h3>
-        <div class="row">
-            <?php
-                echo do_shortcode('[block id="hinh-anh-nam-long"]');
-            ?>
-        </div>
-    </div>
+    </div>   
+    <?php
+        echo do_shortcode('[block id="hinh-anh-nam-long"]');
+    ?>
 </section>
