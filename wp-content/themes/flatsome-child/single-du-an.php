@@ -62,6 +62,9 @@ if($slug == ''){
 .banner p{
 	margin: 0;
 }
+.banner img.size-full.alignnone{
+	margin-bottom: 0;
+}
 </style>
 
 <?php if ( have_posts() ) : ?>
