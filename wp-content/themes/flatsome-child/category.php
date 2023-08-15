@@ -66,4 +66,7 @@ $wp_query = new WP_Query( $args );
         </div>
     </div>
 </div>
+
+<?php get_template_part( 'layouts/footer'); ?>
+
 <?php get_footer(); ?>
