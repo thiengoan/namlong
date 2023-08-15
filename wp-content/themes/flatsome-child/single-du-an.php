@@ -30,6 +30,9 @@ if($slug == ''){
 
 ?>
 <style>
+.section{
+	padding: 60px;
+}
 .bg1{
     background-image: url('<?php echo $bg1;?>');
 }
