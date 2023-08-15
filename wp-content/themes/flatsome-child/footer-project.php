@@ -39,7 +39,7 @@ if($slug == ''){
                     <?php
                         echo do_shortcode('[contact-form-7 id="5c97a31" title="Form liên hệ"]');
                     ?>
-                <small>*Thông tin của khách hàng sẽ được bảo mật và chỉ sử dụng cho dự án của Akari City.</small>
+                <small>*Thông tin của khách hàng sẽ được bảo mật và chỉ sử dụng cho dự án này.</small>
             </div>
         </div>
     </div>
