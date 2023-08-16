@@ -367,8 +367,9 @@ h3.title-main:before {
 .wpcf7 form .wpcf7-response-output{
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #f00;
     border: 0;
+    text-align: center;
 }
 
 .thanhtoan img{

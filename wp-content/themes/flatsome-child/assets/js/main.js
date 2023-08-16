@@ -44,12 +44,16 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(document).ready(function($) {
+    $('.wpcf7-spinner').remove();
 
     var wpcf7Elm = document.querySelector('.wpcf7');
 
+    wpcf7Elm.addEventListener('wpcf7invalid', function (event) {
+        $('.wpcf7-form').removeClass('processing');
+    }, false);
+
     wpcf7Elm.addEventListener('wpcf7submit', function (event) {
         $('.wpcf7-form').removeClass('processing');
-        $('.wpcf7-spinner').remove();
     }, false);
 
 });
