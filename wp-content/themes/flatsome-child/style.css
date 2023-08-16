@@ -425,4 +425,7 @@ h3.title-main:before {
     .row-slider .flickity-prev-next-button{
         display: none;
     }
+    .thanhtoan img{
+        width: 100%;
+    }
 }
