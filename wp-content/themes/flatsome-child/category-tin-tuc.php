@@ -38,7 +38,9 @@ $wp_query = new WP_Query( $args );
                                                     <a href="<?php echo get_permalink(); ?>" alt="<?php the_title(); ?>">
                                                         <?php the_title('<h4>','</h4>'); ?>
                                                     </a>
-                                                    <?php the_excerpt(); ?>
+                                                    <div class="hide-for-medium">
+                                                        <?php the_excerpt(); ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <hr>
