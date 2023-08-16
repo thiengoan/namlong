@@ -409,7 +409,7 @@ h3.title-main:before {
 
 @media (max-width: 991.98px) {
     .section{
-        padding: 30px 0;
+        padding: 30px 0 !important;
     }
     .slider-main .content{
         display: flex;
