@@ -27,7 +27,7 @@ $wp_query = new WP_Query( $args );
 <div class="page-wrapper page-right-sidebar">
     <div class="container">
         <div class="row">
-            <div id="content" class="large-8 left col col-divided" role="main">
+            <div id="content" class="large-8 left col-12 col-divided" role="main">
                 <h3 class="uppercase title-main"><?php echo $term->name; ?></h3>
                 <section class="activity" style="background-color: unset">
                     <div class="container">
@@ -60,7 +60,7 @@ $wp_query = new WP_Query( $args );
                     </div>
                 </section>
             </div>
-            <div class="large-4 col">
+            <div class="large-4 col-12">
                 <?php get_template_part( 'layouts/sidebar'); ?>
             </div>
         </div>

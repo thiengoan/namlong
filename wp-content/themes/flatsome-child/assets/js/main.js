@@ -43,17 +43,18 @@ jQuery(document).ready(function($) {
     });
 });
 
+
+jQuery(document).ajaxComplete(function($) {
+    $(".wpcf7-form").removeClass("processing");
+});
+
 jQuery(document).ready(function($) {
     $('.wpcf7-spinner').remove();
 
     var wpcf7Elm = document.querySelector('.wpcf7');
 
-    wpcf7Elm.addEventListener('wpcf7invalid', function (event) {
-        $('from.wpcf7-form').removeClass('processing');
-    }, false);
-
     wpcf7Elm.addEventListener('wpcf7submit', function (event) {
-        $('from.wpcf7-form').removeClass('processing');
+        $('.wpcf7-form').removeClass('processing');
     }, false);
 
 });

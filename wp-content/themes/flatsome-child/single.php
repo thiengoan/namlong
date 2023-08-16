@@ -9,7 +9,7 @@ get_header();
 <div class="page-wrapper page-right-sidebar">
     <div class="container">
         <div class="row">
-            <div id="content" class="large-8 left col col-divided" role="main">
+            <div id="content" class="large-8 left col-12 col-divided" role="main">
                 <div class="page-inner">
                     <h3 class="entry-title uppercase"><?php the_title(); ?></h3>
                     <div class="post-meta">
@@ -21,7 +21,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="large-4 col">
+            <div class="large-4 col-12">
                 <?php get_template_part( 'layouts/sidebar'); ?>
             </div>
         </div>
