@@ -49,11 +49,11 @@ jQuery(document).ready(function($) {
     var wpcf7Elm = document.querySelector('.wpcf7');
 
     wpcf7Elm.addEventListener('wpcf7invalid', function (event) {
-        $('.wpcf7-form').removeClass('processing');
+        $('from.wpcf7-form').removeClass('processing');
     }, false);
 
     wpcf7Elm.addEventListener('wpcf7submit', function (event) {
-        $('.wpcf7-form').removeClass('processing');
+        $('from.wpcf7-form').removeClass('processing');
     }, false);
 
 });
