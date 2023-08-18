@@ -8,8 +8,8 @@ $slider = new \WP_Query( $args );
 
 $args = [
     'category_name' => 'tin-tuc',
-    'order' => 'asc'
- ];
+    'order' => 'asc',
+];
  
 $news = new \WP_Query( $args );
 ?>
@@ -24,7 +24,7 @@ $news = new \WP_Query( $args );
                         while ( $news->have_posts() ) :
                             $news->the_post();
                             ?>
-                            <div>
+                            <div class="mb-3">
                                 <a href="<?php echo get_permalink() ?>" alt="<?php the_title() ?>"> 
                                     <?php the_title('<h3 class="title-news">','</h3>'); ?>
                                     <?php the_excerpt(); ?>
@@ -38,7 +38,7 @@ $news = new \WP_Query( $args );
                 ?>
                 </div>
             </div>
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-8 col-12 slider-box">
                 <div id="slider">
                     <?php
                     if ( $slider->have_posts() ) :
