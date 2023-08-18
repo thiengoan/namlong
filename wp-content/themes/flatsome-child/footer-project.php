@@ -15,7 +15,7 @@ if($slug == 'waterpoint'){
     $bg = '#188f8d';
 }
 if($slug == 'akari-city'){
-    $bg = '#3e0000';
+    $bg = '#993e22';
 }
 if($slug == ''){
     
@@ -25,8 +25,15 @@ if($slug == ''){
 }
 ?>
 <style>
+.absolute-footer{
+    background-color: <?php echo $bg;?> !important;
+    color: #fff !important;
+}
+.back-to-top.button.icon{
+    background-color: <?php echo $bg;?> !important;
+}
 .footer{
-    background-color: <?php echo $bg;?>;
+    padding: 60px 0 !important;
 }
 </style>
 
@@ -48,12 +55,12 @@ if($slug == ''){
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 cpl-sm-12 mb-3 d-flex justify-content-center align-items-center"> 
+            <div class="col-lg-6 col-md-5 cpl-sm-12 mb-3 d-flex justify-content-center align-items-center"> 
                 <div id="logo-footer" class="logo">
                     <img src="<?php echo ASSET_PATH . '/logo/'.$slug.'.png'; ?>" alt="logo" loading="lazy">
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-3"> 
+            <div class="col-lg-6 col-md-7 col-sm-12 mb-3"> 
                 <h4 class="title uppercase">THÔNG TIN LIÊN HỆ</h4>
                 <div class="info mt-3">   
                     <p class="uppercase"><strong><?php echo get_option('company_name')?></strong></p>

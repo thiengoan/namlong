@@ -314,8 +314,12 @@ h3.title-main:before {
     background-color: #b52828;
 }
 .footer{
-    background-color: #b52828;
     padding: 30px 0;
+    background: url(assets/bg/akari-city/bg-footer.png);
+    background-repeat: repeat-x;
+    background-size: inherit;
+    background-position-y: bottom;
+    background-attachment: fixed;
 }
 .footer h4{
     color: #ffbf00;
@@ -324,9 +328,13 @@ h3.title-main:before {
 }
 .footer p,
 .footer .link-project h5{
-    color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 7px;
+}
+
+.absolute-footer{
+    background-color: #b52828 !important;
+    color: #fff;
 }
 
 .box-mail{

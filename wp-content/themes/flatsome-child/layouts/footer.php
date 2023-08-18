@@ -10,12 +10,12 @@ $query = new \WP_Query( $args );
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-3"> 
+            <div class="col-lg-3 col-md-6 mb-3"> 
                 <div id="logo-footer" class="logo">
                     <?php get_template_part('template-parts/header/partials/element','logo'); ?>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12 mb-3"> 
+            <div class="col-lg-6 col-md-12 mb-3"> 
                 <div class="info">
                     <h4 class="title uppercase">THÔNG TIN LIÊN HỆ</h4>
                     <p class="uppercase"><strong><?php echo get_option('company_name')?></strong></p>
