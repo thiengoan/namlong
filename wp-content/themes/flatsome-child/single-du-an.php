@@ -35,6 +35,7 @@ if($slug == ''){
 }
 .bg1{
     background-image: url('<?php echo $bg1;?>');
+	background-size: cover;
 }
 .bg1 .title-project span{
 	color: #fff;
@@ -44,6 +45,7 @@ if($slug == ''){
 }
 .bg2{
     background-image: url('<?php echo $bg2;?>');
+	background-size: cover;
 }
 .bg2 .title-project span{
 	color: #f2862a;
