@@ -216,6 +216,8 @@ h3.title-main:before {
 .title-project span{
     padding: 0 28px;
     line-height: 40px;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .title-project:before, .title-project:after {
@@ -431,6 +433,11 @@ h3.title-main:before {
     h3.title-main:before{
         border-top: 13px solid transparent;
         margin-top: -8px;
+    }
+    .title-project span{
+        padding: 0 20px;
+        font-weight: 500;
+        font-size: 18px;
     }
 }
 
