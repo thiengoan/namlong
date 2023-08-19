@@ -349,6 +349,7 @@ h3.title-main:before {
 
 .frm-mail{
     background-image: url('assets/images/bg-mail.jpg');
+    background-attachment: fixed;
 }
 
 .form-mail{
