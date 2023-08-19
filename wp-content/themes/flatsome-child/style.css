@@ -338,7 +338,7 @@ h3.title-main:before {
 }
 
 .box-mail{
-    max-width: 665px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px 10px 10px 10px;
     border-radius: 5px;
@@ -352,8 +352,13 @@ h3.title-main:before {
 }
 
 .form-mail{
-    max-width: 500px;
     margin: 0 auto;
+    padding: 5px 30px;
+}
+
+.form-mail .title{
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .form-mail label{
@@ -385,7 +390,6 @@ h3.title-main:before {
 }
 
 .content-popup-vr input.wpcf7-form-control.wpcf7-submit{
-    background: #b52828;
     border-radius: 0;
 }
 

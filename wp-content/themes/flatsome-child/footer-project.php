@@ -31,9 +31,14 @@ if($slug == ''){
 }
 .back-to-top.button.icon{
     background-color: <?php echo $bg;?> !important;
+    border-radius: 0
 }
 .footer{
     padding: 60px 0 !important;
+}
+.wpcf7-submit,
+.content-popup-vr input.wpcf7-form-control.wpcf7-submit{
+    background-color: <?php echo $bg;?> !important;
 }
 </style>
 
