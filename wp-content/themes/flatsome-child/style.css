@@ -406,19 +406,20 @@ h3.title-main:before {
     z-index: 2;
 }
 #phone-vr span{
+    background: linear-gradient(90deg, #f98d2a, rgb(230 8 8));
     position: absolute;
     left: 55px;
     top: 28px;
-    background: #ffffffdb;
     padding-top: 2px;
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 15px;
     padding-bottom: 0;
     z-index: 1;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    color: #e60808;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #ffffff;
     font-weight: bold;
+    border: 2px solid #ab1016;
 }
 @media (max-width: 575.98px) { 
     table tr td:first-child{
