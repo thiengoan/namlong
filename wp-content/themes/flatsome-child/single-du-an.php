@@ -78,6 +78,10 @@ if($slug == ''){
 		background-image: unset;
 		background-color: #e8f2f4;
 	}
+	.frm-mail{
+		background-color: #202237;
+		background-image: unset;
+	}
 }
 </style>
 
