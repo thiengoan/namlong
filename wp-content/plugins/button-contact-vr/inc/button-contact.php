@@ -196,9 +196,11 @@ final class PZF {
 						<div class="phone-vr-img-circle">
 							<a href="tel:<?php echo preg_replace( '/\D/', '',get_option('pzf_phone')); ?>">				
 								<img src="<?php echo PZF_URL.'img/phone.png'; ?>" />
+								
 							</a>
 						</div>
-					</div>
+						<span><?php echo get_option('hotline_1')?></span>
+					</div>					
 					</div>
 					<?php 
 						if(get_option('pzf_phone_bar') == '1'){ ?>

@@ -402,6 +402,24 @@ h3.title-main:before {
     margin: 20px 0;
 }
 
+.phone-vr-img-circle{
+    z-index: 2;
+}
+#phone-vr span{
+    position: absolute;
+    left: 55px;
+    top: 28px;
+    background: #ffffffdb;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    z-index: 1;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #e60808;
+    font-weight: bold;
+}
 @media (max-width: 575.98px) { 
     table tr td:first-child{
         width: 30% !important;
