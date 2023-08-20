@@ -67,6 +67,18 @@ if($slug == ''){
 .banner img.size-full.alignnone{
 	margin-bottom: 0;
 }
+
+@media (max-width: 767.98px) {
+	.bg1{
+		background-image: unset;
+		background-color: #202237;
+	}
+
+	.bg2{
+		background-image: unset;
+		background-color: #e8f2f4;
+	}
+}
 </style>
 
 <?php if ( have_posts() ) : ?>
