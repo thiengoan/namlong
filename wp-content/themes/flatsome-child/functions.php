@@ -34,10 +34,10 @@ function add_scripts() {
 }
 
 function add_layout_footer(){
-  if(!is_singular('du-an')){
-    get_template_part( 'layouts/footer');
-  }else{
+  if(is_singular('du-an')){
     get_template_part( 'footer-project');
+  }else{
+    get_template_part( 'layouts/footer');
   }
 }
 
@@ -255,7 +255,7 @@ function my_general_section() {
         'general', // Page it will be displayed
         'my_settings_section', // Name of our section (General Settings)
         array( // The $args
-            'hotline_1' // Should match Option ID
+            'hotline_2' // Should match Option ID
         )  
     ); 
 
