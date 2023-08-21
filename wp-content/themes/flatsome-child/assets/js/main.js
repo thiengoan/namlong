@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
     $( '#slider' ).slick({
+        lazyLoad: 'ondemand',
         autoplay: true,
         dots: true,
         arrows: false,
@@ -8,8 +9,6 @@ jQuery(document).ready(function($) {
         slidesToScroll: 1,
         fade: true,
     });
-
-    
 
     $('#project').slick({
         infinity: true,
@@ -28,6 +27,7 @@ jQuery(document).ready(function($) {
     });
 
     $('.news').slick({
+        lazyLoad: 'ondemand',
         autoplay: true,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -41,6 +41,12 @@ jQuery(document).ready(function($) {
             }
         ]
     });
+
+    $('img[data-lazy]').one('load', function(e) {
+        if (this.complete) {
+            $(this).siblings('.ajax-loader').remove();
+        }
+    });
 });
 
 jQuery(document).ready(function($) {
@@ -50,15 +56,3 @@ jQuery(document).ready(function($) {
         $('.wpcf7-form').removeClass('processing');
     }, false);
 });
-
-
-window.onscroll = function(e) { 
-    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    var header = document.querySelector('header');
-
-    scrollY <= this.lastScroll 
-      ? header.style.visibility = 'visible'
-      : header.style.visibility = 'hidden'; 
-
-    this.lastScroll = scrollY ;
-}
