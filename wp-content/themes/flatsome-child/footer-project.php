@@ -17,11 +17,11 @@ if($slug == 'waterpoint'){
 if($slug == 'akari-city'){
     $bg = '#993e22';
 }
-if($slug == ''){
-    
+if($slug == 'mizuki-park'){
+    $bg = '#001f4e';
 }
-if($slug == ''){
-    
+if($slug == 'flora-panorama'){
+    $bg = '#255729';
 }
 ?>
 <style>
