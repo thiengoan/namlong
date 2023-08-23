@@ -64,12 +64,15 @@ if($slug == 'akari-city') {
 ?>
 	.bg1{
     	background: #255729 url('<?php echo ASSET_PATH ?>/bg/flora-panorama/bg.png') no-repeat;
+		background-size: cover;
 	}
 	.bg2{
 		background: #fff url('<?php echo ASSET_PATH ?>/bg/flora-panorama/bg.png') no-repeat;
+		background-size: cover;
 	}
 	.footer{
 		background: #fff url('<?php echo ASSET_PATH ?>/bg/flora-panorama/bg.png') no-repeat;
+		background-size: cover;
 	}
 
 <?php } ?>
