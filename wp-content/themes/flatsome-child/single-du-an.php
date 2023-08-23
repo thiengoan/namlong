@@ -55,7 +55,7 @@ if($slug == 'akari-city') {
 		background: #fff url('<?php echo ASSET_PATH ?>/bg/mizuki-park/bg-body.svg') repeat;
 	}
 	.footer{
-		background: #001f4e url('<?php echo ASSET_PATH ?>/bg/mizuki-park/bg-body.svg') repeat;
+		background: #fff url('<?php echo ASSET_PATH ?>/bg/mizuki-park/bg-body.svg') repeat;
 	}
 
 <?php } ?>
