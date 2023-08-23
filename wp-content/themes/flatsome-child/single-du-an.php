@@ -9,44 +9,49 @@ get_header('project');
 
 $slug = $post->post_name;
 
-$bg1 = '';
-
-if($slug == 'waterpoint'){
-    $bg = '#188f8d';
-}
-
-if($slug == 'akari-city'){
-    $bg1 = ASSET_PATH . '/bg/'.$slug.'/bg-1.png'; 
-	$bg2 = ASSET_PATH . '/bg/'.$slug.'/bg-2.png';
-}
-
-if($slug == ''){
-    
-}
-
-if($slug == ''){
-    
-}
-
 ?>
 <style>
 .section{
 	padding: 60px 0;
 }
+
+<?php 
+if($slug == 'akari-city') { 	
+	$bg1 = ASSET_PATH . '/bg/'.$slug.'/bg-1.png'; 
+	$bg2 = ASSET_PATH . '/bg/'.$slug.'/bg-2.png';
+?>
+
 .bg1{
     background-image: url('<?php echo $bg1;?>');
 	background-size: cover;
 }
+
+.bg2{
+    background-image: url('<?php echo $bg2;?>');
+	background-size: cover;
+}
+
+<?php } ?>
+<?php if($slug == 'waterpoint') { 
+?>
+	.bg1{
+    	background: #062943;
+	}
+	.bg2{
+		background: white;
+	}
+	.footer{
+		background: #fff url('<?php echo ASSET_PATH ?>/bg/waterpoint/footer.png') no-repeat left top;
+	}
+
+<?php } ?>
 .bg1 .title-project span{
 	color: #fff;
 }
 .bg1 .container{
 	color: #fff;
 }
-.bg2{
-    background-image: url('<?php echo $bg2;?>');
-	background-size: cover;
-}
+
 .bg2 .title-project span{
 	color: #f2862a;
 }
