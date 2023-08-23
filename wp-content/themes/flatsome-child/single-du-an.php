@@ -45,6 +45,20 @@ if($slug == 'akari-city') {
 	}
 
 <?php } ?>
+
+<?php if($slug == 'mizuki-park') { 
+?>
+	.bg1{
+    	background: #001f4e url('<?php echo ASSET_PATH ?>/bg/mizuki-park/bg-body.svg') repeat;
+	}
+	.bg2{
+		background: #fff url('<?php echo ASSET_PATH ?>/bg/mizuki-park/bg-body.svg') repeat;
+	}
+	.footer{
+		background: #001f4e url('<?php echo ASSET_PATH ?>/bg/mizuki-park/bg-body.svg') repeat;
+	}
+
+<?php } ?>
 .bg1 .title-project span{
 	color: #fff;
 }
