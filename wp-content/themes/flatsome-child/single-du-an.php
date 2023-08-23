@@ -59,6 +59,20 @@ if($slug == 'akari-city') {
 	}
 
 <?php } ?>
+
+<?php if($slug == 'flora-panorama') { 
+?>
+	.bg1{
+    	background: #255729 url('<?php echo ASSET_PATH ?>/bg/flora-panorama/bg.png') no-repeat;
+	}
+	.bg2{
+		background: #fff url('<?php echo ASSET_PATH ?>/bg/flora-panorama/bg.png') no-repeat;
+	}
+	.footer{
+		background: #fff url('<?php echo ASSET_PATH ?>/bg/flora-panorama/bg.png') no-repeat;
+	}
+
+<?php } ?>
 .bg1 .title-project span{
 	color: #fff;
 }
