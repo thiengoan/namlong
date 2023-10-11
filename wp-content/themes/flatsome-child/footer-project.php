@@ -25,7 +25,7 @@ if($slug == 'flora-panorama'){
 }
 ?>
 <script>
-    var slug = <?=$slug; ?>;
+    var slug = '<?=$slug; ?>';
     var project = 'NAM LONG';
     if(slug == 'waterpoint'){
         project  = 'WATER POINT';
