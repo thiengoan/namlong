@@ -25,21 +25,23 @@ if($slug == 'flora-panorama'){
 }
 ?>
 <script>
-    var slug = '<?=$slug; ?>';
-    var project = 'NAM LONG';
-    if(slug == 'waterpoint'){
-        project  = 'WATER POINT';
-    }
-    if(slug == 'akari-city'){
-        project = 'AKARI CITY';
-    }
-    if(slug == 'mizuki-park'){
-        project = 'MIZUKI PARK';
-    }
-    if(slug == 'flora-panorama'){
-        project = 'FLORA PANORAMA';
-    }
-    $('#project').val(project);
+    jQuery(document).ready(function($) {
+        var slug = '<?=$slug; ?>';
+        var project = 'NAM LONG';
+        if(slug == 'waterpoint'){
+            project  = 'WATER POINT';
+        }
+        if(slug == 'akari-city'){
+            project = 'AKARI CITY';
+        }
+        if(slug == 'mizuki-park'){
+            project = 'MIZUKI PARK';
+        }
+        if(slug == 'flora-panorama'){
+            project = 'FLORA PANORAMA';
+        }
+        $('#project').val(project);
+    });
 </script>
 <style>
 .absolute-footer{
