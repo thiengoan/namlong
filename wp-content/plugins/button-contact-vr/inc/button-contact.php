@@ -55,7 +55,7 @@ final class PZF {
 				<div id="contact-form-vr" class="button-contact">
 					<div class="phone-vr">
 						<div class="phone-vr-circle-fill"></div>
-						<div class="phone-vr-img-circle">			
+						<div class="bao-gia">			
 							<img src="<?php echo PZF_URL.'img/icon'.get_option('pzf_icon_contact_form').'.png'; ?>" />
 						</div>
 					</div>	

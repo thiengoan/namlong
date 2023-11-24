@@ -52,6 +52,11 @@ section ul{
     background-color: #b52828;
     border-color: #b52828;
 } 
+.bao-gia {
+    width: 70px;
+    margin-left: 12px;
+    animation: phone-vr-circle-fill 1s infinite ease-in-out;
+}
 .title-news{
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
